@@ -1,6 +1,6 @@
 package jp.gihyo.jenkinsbook.action;
 
-import java.util.Calendar
+import java.util.Calendar;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -69,9 +69,9 @@ public class SampleAction {
         Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         if (hour < 12) {
-        	dto.setMessage("Good morning")
-        }else {
-        	dto.setMessage("Good afternoon")
+        	dto.setMessage("Good morning");
+        } else {
+        	dto.setMessage("Good afternoon");
         }
 
         HttpSession session = request.getSession(true);
